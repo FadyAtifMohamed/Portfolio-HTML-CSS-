@@ -1,0 +1,213 @@
+body
+        {
+            margin: 0;
+            padding: 0;
+        }
+        body>div
+        {
+            margin-bottom: 10px;
+        }
+        .container-1
+        {
+            height: 95vh;
+            display: grid;
+            grid-template-columns: 70% 1fr;
+        }
+        .container-1-col1
+        {
+            background-color: #332941;
+            display: flex;
+            flex-direction: column;
+            justify-content:center;
+        }
+        .container-1-col1>div
+        {   
+            margin-left: 150px;
+            width:fit-content;
+            color: #F8E559;
+        }
+        .container-1-col1 h1
+        {
+            font-family: serif;
+            font-size: 60px;
+        }
+        .container-1-col1 p
+        {
+            font-family: sans-serif;
+            font-size: 30px;
+        }
+        .container-1-col2
+        {
+            background-color: #F8E559;
+            display: inline-flex;
+        }
+        img
+        {
+            width:  300px;
+            height: 300px;
+        }
+
+        .fady-container
+        {   
+            width:  300px;
+            height: 300px;            
+            border: 5px solid white;
+            margin-top: 50%;
+            margin-left: -30%;
+        }
+        .fady-image
+        {
+            margin-left: -15%;
+            margin-top: -15%;
+        }   
+
+        .container-2
+        {
+            display: grid;
+            grid-template-rows: repeat(3,1fr);
+           
+        }
+        .container-2>.card
+        {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        
+        }
+        .container-2>.card>img
+        {
+            border-radius: 50%;
+            width: 100%;
+            max-width: 200px;
+            height: auto;
+        }
+        .container-2>.card>p
+        {
+            text-align: center;
+            width: 50%;
+        }
+        button
+        {
+            background-color: #3B3486;
+            border: none;
+            color: white;
+            padding: 20px 52px;
+            text-align: center;
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+        .row3
+        {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .row3>h3
+        {
+            width: 50%;
+        }
+        .container-3
+        {
+            display: grid;
+            grid-template-rows: repeat(2,1fr);
+            margin-bottom: 0;
+            background-color: #3B3486;
+            color: white;
+            
+        }
+        .container-3>p
+        {
+            text-align: center;
+        }
+        .container-3>div
+        {
+            display: flex;
+            justify-content: center;
+        }
+        ul
+        {
+            display: flex;
+            list-style-type: none;
+        }
+        li 
+        {
+            margin: 0 20px;
+        }
+        h2,h3
+        {
+            color: #3B3486;
+            font-weight: bold;
+            font-family: serif;
+        }
+        .card p
+        {
+            font-family: sans-serif;
+        }
+        a
+        {
+            text-decoration: none;
+            color: white;
+        }
+
+            /* to make the first conatiner responsive to mobile phones*/
+            @media screen and (max-width: 950px)
+            {
+                .container-1-col2
+                {
+                    display: inline-flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+                img
+                {
+                    width:  100%;
+                    height: 100%;
+                }
+    
+            .fady-container
+                {   
+                    width:  150px;
+                    height: 150px;            
+                    border: 5px solid white;
+                    margin-top: 0;
+                    margin-left: 0;               
+                }
+            .fady-image
+                {
+                    margin-left: 0;
+                    margin-top: 0;
+                }   
+            }
+           
+            @media screen and (max-width: 600px)
+            {
+                .container-1
+                {
+                    height: 100vh;
+                    display: grid;
+                    grid-template-columns: 1fr;
+                    grid-template-rows: 60% 30%;
+                }
+                .container-1-col1
+                {
+                    display:flex;
+                    justify-content: center;
+                    align-items: center;
+                    
+                }
+            .container-1-col1>div
+                {               
+                    margin: 0;
+                    color: #F8E559;
+                }
+            .container-1-col1 h1
+                {
+                    font-family: serif;
+                    font-size: 40px;
+                }
+            .container-1-col1 p
+                {
+                    font-family: sans-serif;
+                    font-size: 20px;
+                }    
+    
+            }
